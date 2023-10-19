@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-
- * read_line - To read the input string.
+ * read_line - reads the input string.
  *
- * @i_eof: return value of getline function * Return: input string
-
+ * @i_eof: return value of getline function
+ * Return: input string
+ */
 char *read_line(int *i_eof)
 {
 	char *input = NULL;
@@ -15,4 +15,3 @@ char *read_line(int *i_eof)
 
 	return (input);
 }
-
