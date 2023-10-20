@@ -1,4 +1,4 @@
-# Simple-Shell-project
+# Simple_shell
 shell collaborating project
 Overview
 Sodashy is a sh-compatible command language interpreter that executes commands read from the standard input or from a file.
