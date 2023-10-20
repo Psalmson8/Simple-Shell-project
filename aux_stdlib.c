@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *get_len - Get the lenght of a number.
- *@n: type int number.
- *Return: Lenght of a number.
+ * get_len - Get the lenght of a number.
+ * @n: type int number.
+ * Return: Lenght of a number.
  */
 int get_len(int n)
 {
@@ -27,11 +27,10 @@ int get_len(int n)
 
 	return (lenght);
 }
-
 /**
- *aux_itoa - function converts int to string.
- *@n: type int number.
- *Return: String.
+ * aux_itoa - function converts int to string.
+ * @n: type int number
+ * Return: String.
  */
 char *aux_itoa(int n)
 {
@@ -42,6 +41,7 @@ char *aux_itoa(int n)
 	buffer = malloc(sizeof(char) * (lenght + 1));
 	if (buffer == 0)
 		return (NULL);
+
 	*(buffer + lenght) = '\0';
 
 	if (n < 0)
@@ -66,9 +66,9 @@ char *aux_itoa(int n)
 }
 
 /**
- *_atoi - converts a string to an integer.
- *@s: input string.
- *Return: integer.
+ * _atoi - converts a string to an integer.
+ * @s: input string.
+ * Return: integer.
  */
 int _atoi(char *s)
 {
@@ -90,6 +90,7 @@ int _atoi(char *s)
 		}
 		count++;
 	}
+
 	for (i = count - size; i < count; i++)
 	{
 		oi = oi + ((*(s + i) - 48) * m);
