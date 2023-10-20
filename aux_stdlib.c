@@ -55,13 +55,13 @@ char *aux_itoa(int n)
 	}
 
 	lenght--;
-	do
-	{
+	do {
 		*(buffer + lenght) = (n1 % 10) + '0';
 		n1 = n1 / 10;
 		lenght--;
 	}
-	while (n1 > 0);	
+	while (n1 > 0)
+		;
 	return (buffer);
 }
 
